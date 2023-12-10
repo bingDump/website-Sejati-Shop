@@ -1,0 +1,115 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background-image: url("../img/jumbotrooon.PNG");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background: linear-gradient(90deg, rgba(236, 240, 241, 1) 16%, rgba(52, 152, 219, 1) 55%, rgba(26, 188, 156, 1) 100%);
+
+}
+
+/* 
+.container {
+    background: none;
+} */
+
+.log {
+    background: linear-gradient(90deg, rgba(236, 240, 241, 1) 16%, rgba(52, 152, 219, 1) 55%, rgba(26, 188, 156, 1) 100%);
+    position: absolute;
+    left: 0;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 5px 5px 11px #2c3e50;
+    font-size: 14px;
+}
+
+.log input {
+    font-size: 16px;
+    caret-color: #3498db;
+    background: none;
+    border: none;
+    transition: all 0.5s;
+}
+
+.log input:focus {
+    background: none;
+    box-shadow: 2px 2px 7px #2c3e50;
+}
+
+.hed {
+    text-align: center;
+    text-shadow: 1px 1px 1px #2c3e50;
+    color: #1abc9c;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+
+/* user */
+
+.loogin {
+    background: #ecf0f1;
+    color: #1abc9c;
+    height: 500px;
+    box-shadow: 7px 7px 12px #2c3e50;
+
+}
+
+.loogin .lgin {
+    margin-top: 50px;
+
+}
+
+.container .txxt {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/jumbotrooon.PNG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ecf0f1;
+    padding-top: 50px;
+    box-shadow: 7px 7px 12px #2c3e50;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.loogin .reg {
+    font-size: 14px;
+    margin-left: 30px;
+}
+
+.loogin .reg:hover {
+    text-decoration: none;
+    color: #3498db;
+}
+
+.register {
+    color: #1abc9c;
+    background: #ecf0f1;
+}
+
+.registerside {
+    background: #2c3e50;
+}
+
+@media (max-width: 790px) {
+    .loogin {
+        margin-top: -20px;
+
+
+    }
+
+    .log {
+        margin-left: 0;
+
+    }
+
+
+    .txxt {
+        display: none;
+    }
+
+    .register {
+        margin-bottom: 200PX;
+    }
+}

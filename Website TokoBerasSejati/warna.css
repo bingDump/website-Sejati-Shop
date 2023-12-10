@@ -1,0 +1,471 @@
+/* Primary Styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    background: #ecf0f1;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    color: #2c3e50;
+
+
+}
+
+h1 {
+    font-size: 1.4em;
+}
+
+em {
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Layout */
+.layout {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background: whitesmoke;
+}
+
+.layout_sidebar {
+    width: 0;
+
+}
+
+
+/* Sidebar */
+.sidebar_trigger {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4em;
+    background: #3498db;
+    text-align: right;
+
+
+}
+
+.sidebar_trigger>i {
+    display: inline-block;
+    margin: 1.5em 0 0 1.5em;
+    color: #ecf0f1;
+    margin-top: 30px;
+    margin-right: 20px;
+    text-decoration: overline;
+
+}
+
+.sidebar_nav {
+    position: fixed;
+    z-index: 99;
+    left: -15em;
+    overflow: hidden;
+    transition: all .3s ease-in;
+    width: 250px;
+    height: 100%;
+    background: whitesmoke;
+    color: #3498db;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.sidebar_nav .head {
+    background: #3498db;
+    height: 30px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    padding-bottom: 10px;
+    text-shadow: 2px 2px 5px black;
+    letter-spacing: 1px;
+}
+
+.sidebar_nav input {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-left: 20px;
+    font-size: 17px;
+    caret-color: #2c3e50;
+    background: none;
+}
+
+.sidebar_nav .logo {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+
+
+.sidebar_nav:hover,
+.sidebar_nav:focus,
+.sidebar_trigger:focus+.sidebar_nav,
+.sidebar_trigger:hover+.sidebar_nav {
+    left: 0;
+}
+
+.sidebar_nav ul {
+    position: absolute;
+    top: 4em;
+
+    margin-left: 10px;
+    padding: 0;
+    width: 250px;
+}
+
+.sidebar_nav .logo span {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: bold;
+    font-size: 40px;
+    color: #2c3e50;
+    font-weight: normal;
+    text-shadow: 2px 2px 4px #2c3e50;
+
+
+}
+
+.sidebar_nav ul li {
+    width: 100%;
+
+}
+
+.sidebar_nav ul li i {
+    margin-right: 10px;
+    color: #1abc9c;
+}
+
+.sidebar_nav ul li i:hover {
+    color: #2c3e50;
+}
+
+.sidebar_nav ul .sidebar_nav-link {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    margin-left: 40px;
+    margin-top: 5px;
+
+    transition: all 0.3s;
+    letter-spacing: 1px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #2c3e50;
+}
+
+.sidebar_nav ul .login {
+    margin-top: 20px;
+}
+
+.sidebar_nav ul .sidebar_nav-link:hover {
+    font-weight: bold;
+    background: #2980b9;
+    border-radius: 20px;
+    color: #ecf0f1;
+
+
+
+}
+
+.sidebar_nav .foot {
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: absolute;
+    font-size: 10px;
+    color: #1abc9c;
+}
+
+/* .sidebar_nav-link i {
+    color: #ecf0f1;
+} */
+
+/* .sidebar_nav-link>i::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}  */
+
+
+.layout_content {
+
+    background: #ecf0f1;
+
+    width: 100%;
+    color: #2c3e50;
+
+}
+
+.layout_content .jumbotron {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/jumbotrooon.PNG");
+    background-repeat: no-repeat;
+    height: 400px;
+    /* width: 1020px; */
+    background-size: cover;
+
+
+    color: #ecf0f1;
+    padding-left: 20px;
+    padding-top: 100px;
+
+}
+
+.layout_content .barang {
+
+
+    right: 0;
+}
+
+/* .keranjang .btn  */
+.layout_content .barang .card .btn,
+.detail .btn {
+    background: #1abc9c;
+    border: #1abc9c;
+    color: #ecf0f1;
+    width: 100px;
+
+    text-align: center;
+}
+
+/* 
+.keranjang .btn:hover  */
+.layout_content .barang .card .btn:hover,
+.detail .btn:hover {
+    background: #3498db;
+    border: #3498db;
+    color: #ecf0f1;
+}
+
+/* .keranjang .table .btn {
+    background: red;
+    color: #ecf0f1;
+    height: 30px;
+    padding-bottom: 5px;
+    font-size: 14px;
+    letter-spacing: 1px;
+
+} */
+
+/* .keranjang .btn-lanjut {
+    background: #ecf0f1;
+    color: #2c3e50;
+    text-decoration: none;
+    border: 2px solid #1abc9c;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+
+} */
+
+.keranjang .table,
+table td,
+.admin {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+
+.info_barang {
+    font-size: 18px;
+}
+
+.info_detail {
+    font-size: 10px;
+    color: red;
+}
+
+.card-title {
+    font-size: 18px;
+}
+
+.footer {
+    background: #3498db;
+    color: white;
+    font-size: 12px;
+    bottom: 0;
+
+}
+
+.footer .foot {
+    text-align: center;
+}
+
+.card-text {
+    font-size: 12px;
+}
+
+.barang .btn-konten {
+    margin-left: 350px;
+    margin-top: 20px;
+}
+
+.dm {
+    margin-top: 30px;
+}
+
+#nota {
+    font-size: 12px;
+}
+
+@media (max-width: 576px) {
+    .barang .detailbeli {
+        font-size: 12px;
+    }
+
+    .keranjang .table {
+        font-size: 10px;
+    }
+
+    .keranjang .table .btn {
+        font-size: 8px;
+        width: 33px;
+        text-align: left;
+        padding: 3px;
+
+    }
+
+    .table {
+        font-size: 10px;
+
+    }
+
+    .table .btn {
+        font-size: 8px;
+
+        text-align: left;
+        padding: 3px;
+    }
+
+    .dm {
+        margin-top: 130px;
+        margin-right: 120px;
+        text-align: left;
+    }
+
+    .barang .btn-konten {
+
+        margin-top: 85px;
+        margin-left: 80px;
+        height: 20px;
+        z-index: 1;
+    }
+
+    .barang .btn-konten a,
+    .barang .btn-konten i,
+    .barang .btn-konten button {
+        font-size: 12px;
+        height: 30px;
+    }
+
+    .barang .btn-konten input {
+        height: 30px;
+        width: 150px;
+        font-size: 12px
+    }
+
+    .barang .home {
+        height: 500px;
+        font-size: 14px;
+
+    }
+
+    .layout_content .jumbotron h2 {
+        font-size: 35px;
+
+    }
+
+    .barang .keranjang .heady {
+        margin-top: 20px;
+
+    }
+
+}
+
+
+
+/* Mobile First */
+@media (min-width: 42em) {
+    .layout_content {
+        margin-left: 4em;
+    }
+
+    .layout_content .gambarheader {
+        margin: -10px;
+    }
+
+
+
+    /* Sidebar */
+    .sidebar_trigger {
+        width: 4em;
+
+    }
+
+    .sidebar_nav {
+        width: 4em;
+        left: 0;
+
+
+    }
+
+
+
+    .sidebar_nav:hover,
+    .sidebar_nav:focus,
+    .sidebar_trigger:hover+.sidebar_nav,
+    .sidebar_trigger:focus+.sidebar_nav {
+        width: 15em;
+        z-index: 99;
+
+    }
+
+
+}
+
+@media (min-width: 68em) {
+    .layout_content {
+        margin-left: 15em;
+    }
+
+    /* Sidebar */
+    .sidebar_trigger {
+        display: none
+    }
+
+    .sidebar_nav {
+        width: 15em;
+    }
+
+    .sidebar_nav ul {
+        top: 1.3em;
+
+
+    }
+
+
+
+
+}
